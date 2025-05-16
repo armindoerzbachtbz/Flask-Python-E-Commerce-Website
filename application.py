@@ -12,7 +12,7 @@ app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
 # Creates a connection to the database
-db = SQL ( "sqlite:///data.db" )
+db = SQL ( "mysql://shopuser2:password2@10.11.5.5:3306/ecommerce" )
 
 
 @app.route("/")
